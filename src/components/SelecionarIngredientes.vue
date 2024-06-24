@@ -1,17 +1,22 @@
 <script lang="ts">
 import { obterCategorias } from '@/http';
 import ICategoria from '@/interfaces/ICategoria';
+import CardCategoria from './CardCategoria.vue';
 
 export default {
-    data() { //Propriedades dentro de data são reativas por padrão. Qualquer propriedade criada dentro de data pode ser chamada de estado
+    //As propriedades do objeto retornado no data() são estados.
+    //Propriedades dentro de data são reativas por padrão.
+    data() {
         return {
             categorias: [] as ICategoria[]
         }
     },
     //Created Retorna objetos depois de terem sido renderizados e async await fica na escuta aguardando alterações para sincronizar.
+    //Esse método é executado após as propriedades de data() terem sido definidas, sendo assim possível acessá-las e modificá-las.
     async created() {
         this.categorias = await obterCategorias();
-    }
+    },
+    components: { CardCategoria }
 }
 </script>
 
@@ -27,7 +32,7 @@ export default {
 
         <ul class="categorias">
             <li v-for="categoria in categorias" :key="categoria.nome">
-                {{ categoria.nome }}
+                <CardCategoria v-bind:categoria="categoria"/>
             </li>
         </ul>
 

@@ -5,10 +5,10 @@ export async function obterCategorias() {
 
     //const categorias = await resposta.json();
 
-    await new Promise((resolver) => {
+    /* await new Promise((resolver) => {
 
         setTimeout(resolver, 3000); //força aguardar 3 segundos antes de sincronizar os dados
-    })
+    }) */
 
     const categorias: ICategoria[] = await resposta.json();
 
