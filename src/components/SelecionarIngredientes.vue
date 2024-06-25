@@ -24,7 +24,7 @@ export default {
     <section class="selecionar-ingredientes">
         <h1 class="cabecalho titulo-ingredientes"> Ingredientes </h1>
 
-        <p class="intrucoes">
+        <p class="paragrafo-lg intrucoes">
             Selecione abaixo os ingredientes que você quer usar nesta receita:
             <br>
             <br>
@@ -32,7 +32,7 @@ export default {
 
         <ul class="categorias">
             <li v-for="categoria in categorias" :key="categoria.nome">
-                <CardCategoria v-bind:categoria="categoria"/>
+                <CardCategoria v-bind:categoria="categoria" />
             </li>
         </ul>
 
