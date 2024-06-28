@@ -32,6 +32,7 @@ export default {
 
 <style scoped>
 .categoria {
+<<<<<<< HEAD
     width: 19.5rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -68,5 +69,43 @@ export default {
     gap: 0.5rem;
     flex-wrap: wrap;
     color: rgb(137, 230, 160);
+=======
+  width: 19.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--branco, #FFF);
+  box-shadow: 4px 4px 10px 0px rgba(68, 68, 68, 0.05);
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.categoria__cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categoria__imagem {
+  width: 3.5rem;
+}
+
+.categoria__nome {
+  text-align: center;
+  color: var(--verde-medio, #17e04d);
+  font-weight: 700;
+}
+
+.categoria__ingredientes {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  color:#17e04d;
+>>>>>>> c2c2bba77a768cfe9612f0d7a26d33df7a8ef3f1
 }
 </style>
