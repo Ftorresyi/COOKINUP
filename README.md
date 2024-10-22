@@ -1,2 +1,2 @@
-# COOKINUP
-Site VueJS
+# COZINHA FÁCIL
+Site VueJS e JAVA
