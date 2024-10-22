@@ -1,2 +1,2 @@
-# COZINHA FÁCIL
+# RECEITA FÁCIL
 Site VueJS e JAVA
